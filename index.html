@@ -1,64 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Nino Abravanel</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nino Abravanel</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Nino Abravanel</h1>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="p-5 bg-dark text-white">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="fw-bold">Nino Abravanel</h1>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="sobre">
-        <div class="container">
-            <h2>Sobre</h2>
-            <p>Olá, meu nome é Nino Abravanel. Sou desenvolvedor web com experiência em HTML, CSS, JavaScript e frameworks modernos. Adoro criar soluções criativas e eficientes para a web.</p>
-        </div>
-    </section>
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+                <div>
+                    <h2 class="display-4 fw-bold">Conheça Nino Abravanel</h2>
+                    <p class="lead">
+                        Nino Abravanel é uma personalidade conhecida por seu estilo de vida aventureiro e pela paixão por motocicletas.
+                        Ele é um entusiasta das duas rodas e costuma ser visto explorando a cidade e as estradas sobre sua moto.
+                    </p>
+                    <a href="#galeria" class="btn btn-primary btn-lg">Veja as fotos do Nino</a>
+                </div>
+                <img src="img/nino-moto.jpg" alt="Nino Abravanel em sua moto" class="img-fluid rounded" width="400" loading="lazy" />
+            </div>
+        </section>
 
-    <section id="projetos">
-        <div class="container">
-            <h2>Meus Projetos</h2>
-            <ul>
-                <li>
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do projeto 1.</p>
-                </li>
-                <li>
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do projeto 2.</p>
-                </li>
-                <li>
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do projeto 3.</p>
-                </li>
-            </ul>
-        </div>
-    </section>
+        <section id="galeria" class="my-5" tabindex="0" aria-label="Galeria de fotos de Nino Abravanel">
+            <h2 class="text-center mb-4">Galeria</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <img src="img/nino1.jpg" alt="Nino Abravanel sorrindo" class="img-fluid rounded" loading="lazy" />
+                </div>
+                <div class="col-md-4">
+                    <img src="img/nino2.jpg" alt="Nino com sua moto estacionada" class="img-fluid rounded" loading="lazy" />
+                </div>
+                <div class="col-md-4">
+                    <img src="img/nino3.jpg" alt="Nino pilotando sua motocicleta" class="img-fluid rounded" loading="lazy" />
+                </div>
+            </div>
+        </section>
 
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Email: nino@exemplo.com</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/nino-abravanel">linkedin.com/in/nino-abravanel</a></p>
-        </div>
-    </section>
+        <section id="contato" class="my-5">
+            <h2 class="mb-3">Fale com Nino Abravanel</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Digite seu nome completo" />
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Digite seu email" />
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4" class="form-control" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Enviar mensagem</button>
+            </form>
+        </section>
+    </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Nino Abravanel</p>
-        </div>
+    <footer class="text-center p-3 bg-dark text-white fst-italic">
+        <p>Siga Nino Abravanel nas redes sociais</p>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-whatsapp fs-4"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-tiktok fs-4"></i></a>
+        <p class="mt-3">Projeto fictício sobre Nino Abravanel.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
+
